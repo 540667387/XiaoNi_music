@@ -6,6 +6,11 @@
 
 GUI使用的是Tkinter，后续会使用pyQt5进行美化。
 
+# 如何使用
+
+想要运行py文件来启动的话执行music_player_1_5_dev.py
+想要运行exe文件来启动的话需要执行pyinstaller -F -i  static/qiaoba.ico music_player_1_5.py --noconsole --hidden-import=addons.migu  --hidden-import=addons.netease --hidden-import=addons.qq
+打成exe文件就可以运行了，记得exe文件要与static目录在同一级目录下
 
 
 后续会改进成客户端服务端模式，可以添加喜欢的歌曲到自己的歌单
