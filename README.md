@@ -7,6 +7,7 @@
 GUI使用的是Tkinter，后续会使用pyQt5进行美化。
 
 # 如何使用
+自行下载对应的依赖包，在运行的py文件同级目录中下载一个ffmpeg.exe用于m4a转化成MP3格式
 
 想要运行py文件来启动的话执行music_player_1_5_dev.py
 想要运行exe文件来启动的话需要执行pyinstaller -F -i  static/qiaoba.ico music_player_1_5.py --noconsole --hidden-import=addons.migu  --hidden-import=addons.netease --hidden-import=addons.qq
