@@ -7,11 +7,13 @@
 GUI使用的是Tkinter，后续会使用pyQt5进行美化。
 
 # 如何使用
-自行下载对应的依赖包，在运行的py文件同级目录中下载一个ffmpeg.exe用于m4a转化成MP3格式
-
+pip install -r requirements.txt 下载相应的依赖包
+ffmpeg.exe是将ma4格式转化成mp3格式的工具
 想要运行py文件来启动的话执行music_player_1_5_dev.py
-想要运行exe文件来启动的话需要执行pyinstaller -F -i  static/qiaoba.ico music_player_1_5.py --noconsole --hidden-import=addons.migu  --hidden-import=addons.netease --hidden-import=addons.qq
-打成exe文件就可以运行了，记得exe文件要与static目录在同一级目录下
+在windows系统下可以直接运行dist目录下的exe文件
+重新打包exe文件运行以下命令
+pyinstaller -F -i  static/qiaoba.ico music_player_1_5.py --noconsole --hidden-import=addons.migu  --hidden-import=addons.netease --hidden-import=addons.qq
+记得exe文件要与static目录在同一级目录下
 
 
 后续会改进成客户端服务端模式，可以添加喜欢的歌曲到自己的歌单
